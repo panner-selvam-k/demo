@@ -1,0 +1,18 @@
+.container-fluid > .col-sm-8{
+    background-color: #d5fdffd9;
+    margin: 8% auto;
+}
+img{
+    width:60%;
+}
+.img-cls{
+    text-align: center;
+}
+.row > .col{
+    text-align: center;
+}
+@media screen and (max-width:360px) {
+    img{
+    width:30%;
+} 
+}
