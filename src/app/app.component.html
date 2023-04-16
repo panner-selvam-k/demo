@@ -1,120 +1,47 @@
-<!-- <div>
-  <h1>Log In to Angular Web Application</h1>
-  <img src="..\assets\Logo\png-transparent-angularjs.png">
-</div> -->
-
 <style>
-.item1 { grid-area: top;}
-.item2 { grid-area: left; }
-.item3 { grid-area: right}
-.item4 {grid-area: bottom; font-size:13px !important;}
-
-.mygrid {
-  display: grid;
-  grid-template-areas:
-   'top top top'
-   'left right right'
-   'bottom bottom bottom';
-  gap: 0px;
-  background-color: #2196F3;
-  margin: 40px auto;
-    width: 60%;
-}
-.formClass{
-  font-size: 13px;
-}
-.mygrid > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 24px;
-}
-img{
-  border-radius: 8%;
-  max-width: 40%;
-}
-.formClass{
-  text-align: left;
-}
-input{
-  width: 80%;
-}
-.fcitem1,.fcitem3{
-  padding: 3px 0px;
-}
-.fcitem1,.fcitem3{
-  padding: 3px 0px;
-}
-.fcitem2,.fcitem4,.fcitem5{
-  margin-bottom: 12px;
-}
-.fcitem5{
-  text-align: right;
-}
-.fcitem5 > a {
-  margin: 0px 45px 0px 0px;
-}
-input{
-  height: 20px;
-}
-.fcitem6 > input {
-  height : 25px;
-  width: 213px;
-  position : absolute;
-  background-color: #007bff;
-  border-color: #007bff;
-  border-radius: 5px;
-  color:white;
-  font-weight: bolder;
-}
-@media only screen and (max-width:375px){
-  .mygrid {
-  display: grid;
-  grid-template-areas:
-   'top top'
-   'right right'
-   'bottom bottom';
-  gap: 0px;
-  background-color: #2196F3;
-  margin: 40px auto;
-    width: 60%;
-  
-}
-.mygrid > .item1{
-  font-size: 14px !important;
-}.item2{
-  display: none;
-}
-.mygrid > .item3{
-  padding : 20px 15px;
-}
-input{
-  width : 94%;
-}
-.formClass > .fcitem6 > input{
-  width : 182px;
-}
-}
+    .container-fluid > .col-sm-8{
+        background-color: #d5fdffd9;
+        margin: 8% auto;
+    }
+    img{
+        width:60%;
+    }
+    .img-cls{
+        text-align: center;
+    }
+    .row > .col{
+        text-align: center;
+    }
+    @media screen and (max-width:360px) {
+        img{
+        width:30%;
+    } 
+    }
 </style>
-<div class="loginBody">
-  <div class="mygrid">
-    <div class="item1">Log In to Angular</div>
-    <div class="item2"><img src="..\assets\Logo\image"></div>
-    <div class="item3">
-      <div class="formClass">
-        <div class="fcitem1"><label>Email</label></div>
-        <div class="fcitem2"><input type="text" value=""></div>
-        <div class="fcitem3"><label>Password</label></div>
-        <div class="fcitem4"> <input type="text" ></div>
-        <div class="fcitem5"><a href="#">Forget Password</a></div>
-        <div class="fcitem6"><input type="button" value="Log In"></div>
-      </div>
+<div class="container-fluid">
+    <div class="col-sm-8 p-4 rounded-4">
+        <div class="row">
+            <div class="col mb-5">
+                <p class="h2">Log In To Angular</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 img-cls">
+                <img src="../assets/Logo/image">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control mb-3">
+                <a href="#" class="link-primary">Forget Password</a><br>
+                <input type="button" class="btn btn-primary mt-5" value="LogIn">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mt-5">
+                <p>Don't have account? <a href="#" class="link-primary">Register</a></p>
+            </div>
+        </div>
     </div>
-    <div class="item4">Don't have account? <a href="#"> Register</a></div>
-  </div>
 </div>
-
-
-
-
-
